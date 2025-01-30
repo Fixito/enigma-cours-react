@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  margin-block-end: 0;
+}
+
+nav > ul {
+  border-block-end: 1px solid;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding-block: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: oklch(0.623 0.214 259.815);
+  }
+}
+
+button {
+  cursor: pointer;
+}

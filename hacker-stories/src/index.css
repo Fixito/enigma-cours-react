@@ -1,0 +1,43 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: oklch(0.546 0.245 262.881);
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+th:not(:last-child) {
+  cursor: pointer;
+}
+
+th.active {
+  color: oklch(0.723 0.219 149.579);
+}
+
+tr > th {
+  text-align: start;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 640px) {
+  table {
+    display: table;
+    inline-size: 100%;
+  }
+}

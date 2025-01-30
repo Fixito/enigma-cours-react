@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+
+  &:hover,
+  & &.active {
+    color: oklch(0.623 0.214 259.815);
+  }
+}
+
+img {
+  display: block;
+  inline-size: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+article {
+  padding: 0.5rem;
+}
